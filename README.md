@@ -28,7 +28,7 @@ These examples are intended as a starting point for trying the tools and adaptin
 
 ## Prerequisites to use opencode and codex with models through GPT UiO
 
-1. Installed opencode and codex
+1. Installed opencode and [codex](https://learn.chatgpt.com/docs/codex/cli?site_locale=en#getting-started)
 2. Have followed the instructions in [GPT UiO - Bruke GPT UiO med API nøkler](https://www.uio.no/tjenester/it/ki/gpt-uio/hjelp/api-nokler.html) to get API access and to get hold of your API keys.
 3. Have set up environment variables as described in [ Ta i bruk KI med API-tilgang  - Hvordan sette opp miljøvariabler](https://www.uio.no/tjenester/it/ki/gpt-uio/hjelp/bruk-api-tilgang.html#miljovariabler)
 
@@ -36,10 +36,9 @@ These examples are intended as a starting point for trying the tools and adaptin
 1. Install opencode
 2. Download the `config/opencode/opencode.json` file and place it in your `~/.config/opencode` folder.
 
+## Currently not supported at UiO
+Codex is currently not supported at UiO. Work is ongoing to change that. 
 
-#### How to configure codex
-1. Install codex
-2. Download the toml files from this repo in the folder`codex/config` and place them in your `~/.codex/` folder on your laptop.
 
    
 ## Video demonstration
