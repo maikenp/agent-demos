@@ -9,7 +9,7 @@ This repository contains examples and configuration files for experimenting with
 An OpenCode demo with:
 
 - `config/opencode.json`: Example OpenCode configuration.
-- [`opencode-uio-gpt.mp4`](opencode/opencode-uio-gpt.mp4): A video demonstration of the OpenCode setup.
+- [`opencode-select-model.mp4`](opencode/opencode-select-model.mp4): A video demonstration of selecting a model in OpenCode.
 
 The demo illustrates how OpenCode can be used to create folders and files, generate synthetic test data, and produce a simple R script.
 
@@ -21,4 +21,4 @@ These examples are intended as a starting point for trying the tools and adaptin
 
 ## Video demonstration
 
-Watch the [OpenCode with UiO GPT video](opencode/opencode-uio-gpt.mp4) to see the demo in action.
+Watch the [OpenCode model selection video](opencode/opencode-select-model.mp4) to see the demo in action.
