@@ -1,0 +1,6 @@
+# Codex config profile "uio-kimi2-6"
+# Model: moonshotai/Kimi-K2.6 via UiO (UIO_YELLOW_API_KEY)
+# Start with:  codex --profile uio-kimi2-6
+
+model = "moonshotai/Kimi-K2.6"
+model_provider = "UiO-yellow"

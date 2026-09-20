@@ -1,0 +1,6 @@
+# Codex config profile "uio-gemma"
+# Model: google/gemma-4-31B-it via UiO (UIO_YELLOW_API_KEY)
+# Start with:  codex --profile uio-gemma
+
+model = "google/gemma-4-31B-it"
+model_provider = "UiO-yellow"

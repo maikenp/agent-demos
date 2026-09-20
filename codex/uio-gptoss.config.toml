@@ -1,0 +1,7 @@
+# Codex config profile "uio-gptoss"
+# Model: gpt-oss-120b via UiO (UIO_RED_API_KEY)
+# Note: your old config marked gpt-oss-120b as "denne er ikke stott" (not supported).
+# Start with:  codex --profile uio-gptoss
+
+model = "gpt-oss-120b"
+model_provider = "UiO-red"

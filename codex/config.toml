@@ -1,0 +1,155 @@
+model = "gpt-5.1"
+model_provider = "UiO-yellow"
+
+model_reasoning_effort = "medium"
+personality = "pragmatic"
+
+sandbox_mode = "read-only"
+approval_policy = "on-request"
+
+notify = ["/Users/maikenp/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
+
+[model_providers.UiO-yellow]
+base_url = "https://gpt.uio.no/api/v1"
+name = "UiO-yellow"
+env_key = "UIO_YELLOW_API_KEY"
+
+[model_providers.UiO-red]
+base_url = "https://gpt.uio.no/api/v1"
+name = "UiO-red"
+env_key = "UIO_RED_API_KEY"
+
+
+
+
+#######################
+# Trusted folders
+#######################
+
+[projects."/Users/maikenp/agents"]
+trust_level = "trusted"
+
+[projects."/Users/maikenp/gitrepos/codex"]
+trust_level = "trusted"
+
+[projects."/Users/maikenp/Documents/Codex/2026-04-19-models"]
+trust_level = "trusted"
+
+[projects."/Users/maikenp/Documents/Codex/2026-04-19-models/testlocal"]
+trust_level = "trusted"
+
+[projects."/Users/maikenp/Documents/Codex/2026-08-11/spreadsheets-plugin-spreadsheets-openai-primary-runtime"]
+trust_level = "trusted"
+
+[projects."/Users/maikenp/Documents/Codex/2026-08-11/spreadsheets-plugin-spreadsheets-openai-primary-runtime-2"]
+trust_level = "trusted"
+
+[projects."/Users/maikenp/Documents/Codex/2026-08-11/what"]
+trust_level = "trusted"
+
+[projects."/Users/maikenp/Documents/Codex/2026-09-10/hi"]
+trust_level = "trusted"
+
+[projects."/Users/maikenp/Documents/Codex/2026-09-10/new-chat"]
+trust_level = "trusted"
+
+[projects."/Users/maikenp/agent-folder"]
+trust_level = "trusted"
+
+[projects."/Users/maikenp/Documents/Codex/2026-09-17/new-chat"]
+trust_level = "trusted"
+
+[projects."/Users/maikenp/Documents/Codex/2026-09-17/new-chat-2"]
+trust_level = "trusted"
+
+[projects."/Users/maikenp/Documents/Codex/2026-09-19/new-chat"]
+trust_level = "trusted"
+
+[projects."/Users/maikenp/Documents/Codex/2026-09-19/new-chat-2"]
+trust_level = "trusted"
+
+[projects."/Users/maikenp/agent-folder/Molmed retreat 23.09.2026"]
+trust_level = "trusted"
+
+[marketplaces.openai-bundled]
+source_type = "local"
+source = "/Users/maikenp/.codex/.tmp/bundled-marketplaces/openai-bundled"
+
+[marketplaces.openai-primary-runtime]
+source_type = "local"
+source = "/Users/maikenp/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime"
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."visualize@openai-bundled"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
+[plugins."template-creator@openai-primary-runtime"]
+enabled = true
+
+[plugins."codex-app-tools@openai-bundled"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."unified-computer-use@openai-bundled"]
+enabled = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
+[tui.model_availability_nux]
+"gpt-5.5" = 1
+
+[desktop]
+conversationDetailMode = "STEPS_PROSE"
+followUpQueueMode = "steer"
+dock-icon-preference = "codex-system"
+
+[features]
+js_repl = false
+
+[mcp_servers.node_repl]
+args = []
+command = "/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node_repl"
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = "/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"
+NODE_REPL_NODE_PATH = "/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node"
+NODE_REPL_TRUSTED_CODE_PATHS = "/Users/maikenp/.codex:/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"
+CODEX_HOME = "/Users/maikenp/.codex"
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+BROWSER_USE_TINYSKY_ENABLED = "1"
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = ""
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = ""
+NODE_REPL_INSTRUCTIONS_USE_CASE_COMPUTER_USE = ""
+BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
+BROWSER_USE_CODEX_APP_VERSION = "26.915.31945"
+NODE_REPL_TRUSTED_SERVICES = '{"browser":"/Users/maikenp/.codex/plugins/cache/openai-bundled/browser/26.915.31945/scripts/browser-service.mjs","sky":"@oai/sky/service"}'
+SKY_CUA_SERVICE_PATH = "/Users/maikenp/.codex/computer-use/Codex Computer Use.app"
+CODEX_CLI_PATH = "/Applications/ChatGPT.app/Contents/Resources/codex"
+
+[mcp_servers.computer-use]
+command = "./Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient"
+args = ["mcp"]
+cwd = "."
+enabled = false
+
+[shell_environment_policy.set]
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "8e86beb821b9afc846211798e0113bd4b9e79312dfcd135eb447bdb154f64071"
+
+[notice.model_migrations]
+"gpt-5.4" = "gpt-5.6-terra"

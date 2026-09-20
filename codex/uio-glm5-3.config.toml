@@ -1,0 +1,8 @@
+# Codex config profile "uio-gltm5-3"
+# Model: Inferact/GLM-5.3-NVFP4 via UiO (UIO_RED_API_KEY)
+# (Your earlier config-uiogpt-glm5.3.toml draft used the yellow key instead -
+#  switch model_provider to "UiO-yellow" here if you prefer that.)
+# Start with:  codex --profile uio-gltm5-3
+
+model = "Inferact/GLM-5.3-NVFP4"
+model_provider = "UiO-yellow"

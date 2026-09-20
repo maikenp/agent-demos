@@ -1,0 +1,6 @@
+# Codex config profile "uio-qwen3-8"
+# Model: Qwen/Qwen3.8-27B-FP8 via UiO (UIO_YELLOW_API_KEY)
+# Start with:  codex --profile uio-qwen3-8
+
+model = "Qwen/Qwen3.8-27B-FP8"
+model_provider = "UiO-yellow"

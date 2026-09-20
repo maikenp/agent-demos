@@ -1,0 +1,6 @@
+# Codex config profile "uio-gpt5-1"
+# Model: gpt-5.1 via UiO (UIO_YELLOW_API_KEY)
+# Start with:  codex --profile uio-gpt5-1
+
+model = "gpt-5.1"
+model_provider = "UiO-yellow"

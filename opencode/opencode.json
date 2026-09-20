@@ -1,0 +1,68 @@
+{
+    "$schema": "https://opencode.ai/config.json",
+    "provider": {
+	"gpt-ntnu-red": {
+  	    "npm": "@ai-sdk/openai-compatible",
+  	    "name": "GPT UIO red",
+  	    "api": "chat",
+  	    "options": {
+  		"baseURL": "https://gpt.uio.no/api/v1",
+  		"apiKey": "{env:UIO_RED_API_KEY}"
+  	    },
+	    "models": {
+		"gpt-oss-120b": {
+		    "name": "GPT UiO - GPT OSS"
+		},
+		"Inferact/GLM-5.3-NVFP4": {
+		    "name": "GPT UiO - GLM-5.3-NVFP4"
+		}
+	    }
+	},
+	"gpt-ntnu-yellow": {
+    	    "npm": "@ai-sdk/openai-compatible",
+	    "name": "GPT UIO yellow",
+	    "api": "chat",
+	    "options": {
+		"baseURL": "https://gpt.uio.no/api/v1",
+	    	"apiKey": "{env:UIO_YELLOW_API_KEY}"
+	    },
+	    "models": {
+	  	"moonshotai/Kimi-K2.6": {
+	  	    "name": "GPT UiO - Kimi-K2.6"
+	  	}
+	    }
+	},
+	"gpt-uio-yellow": {
+    	    "npm": "@ai-sdk/openai-compatible",
+	    "name": "GPT UIO yellow",
+	    "api": "chat",
+	    "options": {
+		"baseURL": "https://gpt.uio.no/api/v1",
+	    	"apiKey": "{env:UIO_YELLOW_API_KEY}"
+	    },
+	    "models": {
+	  	"Qwen/Qwen3.8-27B-FP8": {
+	  	    "name": "GPT UiO - Qwen3.8"
+	  	},
+	  	"google/gemma-4-31B-it": {
+	  	    "name": "GPT UiO - Gemma 4"
+	  	}
+	    }
+	},
+	"gpt-azure-yellow": {
+    	    "npm": "@ai-sdk/openai",
+    	    "name": "GPT Azure yellow gpt",
+    	    "api": "chat",
+    	    "options": {
+    		"baseURL": "https://gpt.uio.no/api/v1",
+    		"apiKey": "{env:UIO_YELLOW_API_KEY}"
+    	    },
+    	    "models": {
+    		"gpt-5.4": {
+    		    "name": "GPT UiO - GPT 5.4",
+    		    "options": { "forceReasoning": true }
+    		}
+    	    }
+	}
+    }
+}
